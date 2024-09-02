@@ -31,7 +31,6 @@ class Fib extends Component {
     await axios.post("/api/values", {
       index: this.state.index,
     });
-
     this.setState({ index: "" });
   };
 
@@ -64,9 +63,12 @@ class Fib extends Component {
           />
           <button>Submit</button>
         </form>
+
         <h3>Indexes I have seen:</h3>
         {this.renderSeenIndexes()}
+
         <h3>Calculated Values:</h3>
+        {this.renderValues()}
       </div>
     );
   }
