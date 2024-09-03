@@ -4,14 +4,32 @@
     {
       "name": "client",
       "image": "docker.io/two4onebill/fibonacci-docker-client:latest",
+      "hostname": "client",
+      "essential": false
+    },
+    {
+      "name": "server",
+      "image": "docker.io/two4onebill/fibonacci-docker-api:latest",
+      "hostname": "api",
+      "essential": false
+    },
+    {
+      "name": "worker",
+      "image": "docker.io/two4onebill/fibonacci-docker-worker:latest",
+      "hostname": "worker",
+      "essential": false
+    },
+    {
+      "name": "nginx",
+      "image": "docker.io/two4onebill/fibonacci-docker-nginx:latest",
       "essential": true,
-      "memory": 128,
       "portMappings": [
         {
           "hostPort": 80,
           "containerPort": 80
         }
-      ]
+      ],
+      "links": ["client", "server"]
     }
   ]
 }
