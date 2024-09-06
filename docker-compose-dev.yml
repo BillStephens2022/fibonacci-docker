@@ -37,6 +37,7 @@ services:
       - ./client:/app
     environment:
       - WDS_SOCKET_PORT=0
+      - CHOKIDAR_USEPOLLING=true
   worker:
     build:
       dockerfile: Dockerfile.dev
