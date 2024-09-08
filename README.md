@@ -2,7 +2,7 @@
 
   ## Description
 
-  A demo Fibonacci calculator application built with Docker with client, server, nginx containers, and deployed with GitHub Actions to AWS (Elastic Beanstalk).  Note that this applcation is no longer deployed to AWS so as not to incur monthly charges.
+  A demo multi-container Fibonacci calculator application built with Docker using client, server, worker, and nginx containers, and deployed with GitHub Actions to AWS (Elastic Beanstalk).  React used for client side and Postgres and Redis used for data storage.  Note that this applcation is no longer deployed to AWS so as not to incur monthly charges.
 
   ## App Screenshot
   ![app screenshot](/screenshot.png)
