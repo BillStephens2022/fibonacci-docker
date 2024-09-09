@@ -2,13 +2,6 @@
   text-align: center;
 }
 
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 25vh;
@@ -24,6 +17,24 @@
   font-size: 3rem;
   letter-spacing: 0.15rem;
   color: white;
+  margin: 1.25rem 0;
+}
+
+.header-main {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.image-container {
+  padding: 0;
+  margin: auto;
+}
+
+.image-fib {
+  width: 15%;
+  height: auto;
+  border-radius: 0.5rem;
 }
 
 .routes {
