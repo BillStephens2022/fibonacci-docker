@@ -13,7 +13,7 @@ const Fib = () => {
 
   const fetchValues = async () => {
     const values = await axios.get("/api/values/current");
-    this.setState(values.data);
+    setValues(values.data);
   };
 
   const fetchIndexes = async () => {
